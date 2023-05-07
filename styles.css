@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,400;9..144,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+}
+
+header {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+ul ,li {
+    display: flex;
+    
+}
+
+.logo {
+    width: 65px;
+}
+
+.toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
+.item {
+    padding:10px 30px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    margin: 0;
+    height: 20px;
+}
+
+.item:hover {
+    background-color: hsl(209, 66%, 65%);
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+}
+.item:focus {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    color: hsl(198, 62%, 26%);
+    text-transform: uppercase;
+}
+
+.header-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    letter-spacing: 8px;
+    margin-top: 10px;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}
+
+
+.cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+
+.card-img{
+    width: 100%;
+}
+
+.card-1{
+    position: relative;
+    padding: 90px;
+    
+}
+
+.box-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: hsl(212, 27%, 19%);
+    
+}
+
+.box-p{
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: hsl(213, 9%, 39%);
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 1.2em;
+    padding: 15px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+  }
+  
+.btn::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 25px;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+.btn:hover {
+    
+}
+
+
+.card-5 {
+    position: relative;
+}
+
+.card-6 {
+    position: relative;
+}
+
+
+
+
+
+.card-title {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    color: hsl(198, 62%, 26%);
+}
+
+.card-text {
+    position: absolute;
+    top: 65%;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+    padding: 10px 100px;
+}
+
+.card-5  p ,.card-5 h1 {
+    color: hsl(167, 40%, 24%);
+}
+
+/* review */
+
+.review {
+    padding: 50px;
+}
+
+.review-title {
+    text-align: center;
+    color: #888;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.rev-card {
+    width: 300px;
+    margin-top: 40px;
+}
+
+.rev-img {
+    width: 100px;
+    border-radius: 50%;
+    padding: 35px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.rev-text {
+    color: #555;
+    text-align: center;
+    line-height: 25px;
+}
+
+.rev-name {
+    text-align: center;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.rev-span {
+    text-align: center;
+    color: #999;
+}
+
+.rev-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-left: 50px;
+}
+
+.cards-pic {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+}
+
+.pic {
+    width: 100%;
+}
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fot-title {
+    color: hsl(167, 40%, 24%);
+    padding: 45px;
+}
+
+.fot-item {
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+    padding: 30px;
+}
+
+.fot-logo {
+    padding: 20px;
+}
+
+
+
+/* screen size */
+
+@media only screen and (min-width: 100px) and (max-width: 375px) {
+    /* toggle */
+    header {
+        background-image: url(./images/mobile/image-header.jpg);
+    }
+    .menu {
+        display: none;
+      }
+    
+      .toggle {
+        display: block;
+      }
+    
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 20px;
+        background-color: #fff;
+        padding: 10px;
+      }
+    
+      .menu.active li {
+        margin: 10px 0;
+        
+      }
+    
+      .menu.active a {
+        color: #999;
+      }
+      .menu.active a:focus {
+        color: black;
+        background-color: hsl(51, 100%, 49%);
+      }
+      .header-title {
+        font-size: 1.5em;
+      }
+
+    .logo {
+        width: 40px;
+    }
+
+    .card-1 {
+       max-width: 375px;
+       padding: 20px;
+    }
+
+    .box-title {
+        font-size: 1.5em;
+    }
+
+    .box-p {
+        font-size: 0.9em;
+        width: 280px;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+
+    .card-title {
+        left: 20%;
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        font-size: 0.8em;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .card-img {
+        width: 375px;
+    }
+    header {
+        max-width: 375px;
+        background-size: cover;
+    }
+    .card-1 {
+        width: 375px;
+    }
+    .rev-cards{
+       
+        display: block;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .review {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-pic {
+        grid-template-columns: 1fr 1fr;
+    }
+    .close {
+        display: block;
+      }
+}
